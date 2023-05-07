@@ -16,6 +16,7 @@ namespace ShapeAnalyzer.Project.Triangle
         public TriangleAnalyzer(double sideA, double sideB, double sideC)
         {
             FillCalculateOperations(_calculateOperations, sideA, sideB, sideC);
+            FillCheckOperations(_checkOperations, sideA, sideB, sideC);
         }
 
         public TriangleAnalyzer(Vector2 coordinateA, Vector2 coordinateB, Vector2 coordinateC)
@@ -23,6 +24,7 @@ namespace ShapeAnalyzer.Project.Triangle
             var sides = ConvertCoordinatesToSides(coordinateA, coordinateB, coordinateC);
 
             FillCalculateOperations(_calculateOperations, sides.sideA, sides.sideB, sides.sideC);
+            FillCheckOperations(_checkOperations, sides.sideA, sides.sideB, sides.sideC);
         }
 
         public double DoCalculation(TriangleCalculateOperationTypes particularCalculationType)
