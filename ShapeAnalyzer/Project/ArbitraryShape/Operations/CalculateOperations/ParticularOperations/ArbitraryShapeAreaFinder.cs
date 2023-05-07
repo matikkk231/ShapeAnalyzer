@@ -7,7 +7,7 @@ namespace ShapeAnalyzer.Project.ArbitraryShape.Operations.CalculateOperations.Pa
     {
         private readonly Vector2[] _coordinates;
 
-        public ArbitraryShapeAreaFinder(params Vector2[] coordinates)
+        public ArbitraryShapeAreaFinder(Vector2[] coordinates)
         {
             _coordinates = coordinates;
         }
@@ -22,12 +22,23 @@ namespace ShapeAnalyzer.Project.ArbitraryShape.Operations.CalculateOperations.Pa
 
         private double FindAreaByGausFormula(double area)
         {
-            for (int j = 0; j < _coordinates.Length; j++)
+            var border = _coordinates.Length - 1;
+            for (int j = 0; j <= border; j++)
             {
-                area += 0.5 * Math.Abs(_coordinates[j + 1].Y * _coordinates[j].X - _coordinates[j + 1].X * _coordinates[j].Y);
+                if (j == border)
+                {
+                    var firstPeak = 0;
+                    area += _coordinates[firstPeak].Y * _coordinates[j].X - _coordinates[firstPeak].X * _coordinates[j].Y;
+                }
+                else
+                {
+                    area += _coordinates[j + 1].Y * _coordinates[j].X - _coordinates[j + 1].X * _coordinates[j].Y;
+                }
             }
 
-            return area;
+            area /= 2;
+
+            return Math.Abs(area);
         }
     }
 }

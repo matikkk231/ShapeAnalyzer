@@ -9,7 +9,7 @@ namespace ShapeAnalyzer.Project.ArbitraryShape
     {
         private readonly Dictionary<ArbitraryShapeCalculateTypes, ICalculateOperation> _calculateOperations = new();
 
-        public ArbitraryShapeAnalyzer(params Vector2[] coordinates)
+        public ArbitraryShapeAnalyzer(Vector2[] coordinates)
         {
             _calculateOperations.Add(ArbitraryShapeCalculateTypes.FindingArea, new ArbitraryShapeAreaFinder(coordinates));
         }
