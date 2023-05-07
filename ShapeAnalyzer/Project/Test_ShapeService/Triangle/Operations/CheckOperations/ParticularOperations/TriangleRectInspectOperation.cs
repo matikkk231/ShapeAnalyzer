@@ -1,12 +1,12 @@
 namespace ShapeAnalyzer.Project.Triangle.Operations.CheckOperations.ParticularOperations
 {
-    internal class TriangleRectangularityInspector : ICheckOperation
+    internal class TriangleRectInspectOperation : ICheckOperation
     {
         private readonly double _sideA;
         private readonly double _sideB;
         private readonly double _sideC;
 
-        public TriangleRectangularityInspector(double sideA, double sideB, double sideC)
+        public TriangleRectInspectOperation(double sideA, double sideB, double sideC)
         {
             _sideA = sideA;
             _sideB = sideB;

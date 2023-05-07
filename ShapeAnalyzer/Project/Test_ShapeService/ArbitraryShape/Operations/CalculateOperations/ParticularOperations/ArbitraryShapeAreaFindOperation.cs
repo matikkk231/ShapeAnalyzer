@@ -3,11 +3,11 @@ using System.Numerics;
 
 namespace ShapeAnalyzer.Project.ArbitraryShape.Operations.CalculateOperations.ParticularOperations
 {
-    public class ArbitraryShapeAreaFinder : ICalculateOperation
+    public class ArbitraryShapeAreaFindOperation : ICalculateOperation
     {
         private readonly Vector2[] _coordinates;
 
-        public ArbitraryShapeAreaFinder(Vector2[] coordinates)
+        public ArbitraryShapeAreaFindOperation(Vector2[] coordinates)
         {
             _coordinates = coordinates;
         }

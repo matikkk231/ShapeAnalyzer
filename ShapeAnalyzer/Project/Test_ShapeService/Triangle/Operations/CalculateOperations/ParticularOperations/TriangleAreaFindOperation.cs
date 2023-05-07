@@ -2,13 +2,13 @@ using System;
 
 namespace ShapeAnalyzer.Project.Triangle.Operations.CalculateOperations.ParticularOperations
 {
-    internal class TriangleAreaFinder : ICalculateOperation
+    internal class TriangleAreaFindOperation : ICalculateOperation
     {
         private readonly double _sideA;
         private readonly double _sideB;
         private readonly double _sideC;
 
-        public TriangleAreaFinder(double sideA, double sideB, double sideC)
+        public TriangleAreaFindOperation(double sideA, double sideB, double sideC)
         {
             _sideA = sideA;
             _sideB = sideB;

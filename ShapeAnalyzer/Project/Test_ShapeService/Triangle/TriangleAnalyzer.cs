@@ -39,12 +39,12 @@ namespace ShapeAnalyzer.Project.Triangle
 
         private void FillCalculateOperations(Dictionary<TriangleCalculateOperationTypes, ICalculateOperation> calculateOperations, double sideA, double sideB, double sideC)
         {
-            calculateOperations.Add(TriangleCalculateOperationTypes.FindArea, new TriangleAreaFinder(sideA, sideB, sideC));
+            calculateOperations.Add(TriangleCalculateOperationTypes.FindArea, new TriangleAreaFindOperation(sideA, sideB, sideC));
         }
 
         private void FillCheckOperations(Dictionary<TriangleCheckOperationTypes, ICheckOperation> checkOperations, double sideA, double sideB, double sideC)
         {
-            checkOperations.Add(TriangleCheckOperationTypes.IsTriangleRectangular, new TriangleRectangularityInspector(sideA, sideB, sideC));
+            checkOperations.Add(TriangleCheckOperationTypes.IsTriangleRectangular, new TriangleRectInspectOperation(sideA, sideB, sideC));
         }
 
         private (double sideA, double sideB, double sideC) ConvertCoordinatesToSides(Vector2 coordinateA, Vector2 coordinateB, Vector2 coordinateC)

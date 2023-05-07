@@ -10,7 +10,7 @@ namespace ShapeAnalyzer.Project.Cycle
 
         public CycleAnalyzer(double radius)
         {
-            _calculateOperations.Add(CycleCaclculateOperationTypes.FindingСircumference, new CircumferenceFinder(radius));
+            _calculateOperations.Add(CycleCaclculateOperationTypes.FindingСircumference, new CircumferenceFindOperation(radius));
         }
 
         public double DoCalculation(CycleCaclculateOperationTypes particularCalculationType)

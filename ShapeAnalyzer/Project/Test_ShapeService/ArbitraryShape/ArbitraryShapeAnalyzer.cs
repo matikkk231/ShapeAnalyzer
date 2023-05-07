@@ -11,7 +11,7 @@ namespace ShapeAnalyzer.Project.ArbitraryShape
 
         public ArbitraryShapeAnalyzer(Vector2[] coordinates)
         {
-            _calculateOperations.Add(ArbitraryShapeCalculateTypes.FindingArea, new ArbitraryShapeAreaFinder(coordinates));
+            _calculateOperations.Add(ArbitraryShapeCalculateTypes.FindingArea, new ArbitraryShapeAreaFindOperation(coordinates));
         }
 
         public double DoCalculation(ArbitraryShapeCalculateTypes particularCalculationType)
