@@ -1,4 +1,4 @@
-namespace ShapeAnalyzer.Project.Triangle.Operations.CalculateOperations
+namespace ShapeAnalyzer.Project.Test_ShapeService.Triangle.Operations.CalculateOperations
 {
     public enum TriangleCalculateOperationTypes
     {

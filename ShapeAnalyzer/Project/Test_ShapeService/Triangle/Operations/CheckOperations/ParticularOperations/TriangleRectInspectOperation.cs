@@ -1,4 +1,4 @@
-namespace ShapeAnalyzer.Project.Triangle.Operations.CheckOperations.ParticularOperations
+namespace ShapeAnalyzer.Project.Test_ShapeService.Triangle.Operations.CheckOperations.ParticularOperations
 {
     internal class TriangleRectInspectOperation : ICheckOperation
     {

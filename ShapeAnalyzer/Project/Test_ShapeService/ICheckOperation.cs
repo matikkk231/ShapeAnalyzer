@@ -1,4 +1,4 @@
-namespace ShapeAnalyzer.Project
+namespace ShapeAnalyzer.Project.Test_ShapeService
 {
     internal interface ICheckOperation
     {

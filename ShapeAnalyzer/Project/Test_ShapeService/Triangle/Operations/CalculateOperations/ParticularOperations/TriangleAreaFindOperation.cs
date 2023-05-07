@@ -1,6 +1,6 @@
 using System;
 
-namespace ShapeAnalyzer.Project.Triangle.Operations.CalculateOperations.ParticularOperations
+namespace ShapeAnalyzer.Project.Test_ShapeService.Triangle.Operations.CalculateOperations.ParticularOperations
 {
     internal class TriangleAreaFindOperation : ICalculateOperation
     {

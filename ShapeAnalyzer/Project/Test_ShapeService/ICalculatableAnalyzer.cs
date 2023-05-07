@@ -1,6 +1,6 @@
 using System;
 
-namespace ShapeAnalyzer.Project
+namespace ShapeAnalyzer.Project.Test_ShapeService
 {
     public interface ICalculatableAnalyzer<T> where T : Enum
     {

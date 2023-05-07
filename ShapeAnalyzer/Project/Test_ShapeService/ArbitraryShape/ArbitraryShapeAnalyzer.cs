@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Numerics;
-using ShapeAnalyzer.Project.ArbitraryShape.Operations.CalculateOperations;
-using ShapeAnalyzer.Project.ArbitraryShape.Operations.CalculateOperations.ParticularOperations;
+using ShapeAnalyzer.Project.Test_ShapeService.ArbitraryShape.Operations.CalculateOperations;
+using ShapeAnalyzer.Project.Test_ShapeService.ArbitraryShape.Operations.CalculateOperations.ParticularOperations;
 
-namespace ShapeAnalyzer.Project.ArbitraryShape
+namespace ShapeAnalyzer.Project.Test_ShapeService.ArbitraryShape
 {
     public class ArbitraryShapeAnalyzer : ICalculatableAnalyzer<ArbitraryShapeCalculateTypes>
     {

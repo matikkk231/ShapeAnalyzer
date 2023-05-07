@@ -1,6 +1,6 @@
 using System;
 
-namespace ShapeAnalyzer.Project.Cycle.Operations.CalculateOperations
+namespace ShapeAnalyzer.Project.Test_ShapeService.Cycle.Operations.CalculateOperations
 {
     internal class CircumferenceFindOperation : ICalculateOperation
     {

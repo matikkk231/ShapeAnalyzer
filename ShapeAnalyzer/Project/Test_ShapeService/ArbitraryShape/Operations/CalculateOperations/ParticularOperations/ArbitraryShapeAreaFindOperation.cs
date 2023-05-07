@@ -1,7 +1,7 @@
 using System;
 using System.Numerics;
 
-namespace ShapeAnalyzer.Project.ArbitraryShape.Operations.CalculateOperations.ParticularOperations
+namespace ShapeAnalyzer.Project.Test_ShapeService.ArbitraryShape.Operations.CalculateOperations.ParticularOperations
 {
     public class ArbitraryShapeAreaFindOperation : ICalculateOperation
     {

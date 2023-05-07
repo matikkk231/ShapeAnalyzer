@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using ShapeAnalyzer.Project.Cycle.Operations;
-using ShapeAnalyzer.Project.Cycle.Operations.CalculateOperations;
+using ShapeAnalyzer.Project.Test_ShapeService.Cycle.Operations;
+using ShapeAnalyzer.Project.Test_ShapeService.Cycle.Operations.CalculateOperations;
 
-namespace ShapeAnalyzer.Project.Cycle
+namespace ShapeAnalyzer.Project.Test_ShapeService.Cycle
 {
     public class CycleAnalyzer : ICalculatableAnalyzer<CycleCaclculateOperationTypes>
     {

@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Numerics;
-using ShapeAnalyzer.Project.Triangle.Operations.CalculateOperations;
-using ShapeAnalyzer.Project.Triangle.Operations.CalculateOperations.ParticularOperations;
-using ShapeAnalyzer.Project.Triangle.Operations.CheckOperations;
-using ShapeAnalyzer.Project.Triangle.Operations.CheckOperations.ParticularOperations;
+using ShapeAnalyzer.Project.Test_ShapeService.Triangle.Operations.CalculateOperations;
+using ShapeAnalyzer.Project.Test_ShapeService.Triangle.Operations.CalculateOperations.ParticularOperations;
+using ShapeAnalyzer.Project.Test_ShapeService.Triangle.Operations.CheckOperations;
+using ShapeAnalyzer.Project.Test_ShapeService.Triangle.Operations.CheckOperations.ParticularOperations;
 
-namespace ShapeAnalyzer.Project.Triangle
+namespace ShapeAnalyzer.Project.Test_ShapeService.Triangle
 {
     public class TriangleAnalyzer : ICalculatableAnalyzer<TriangleCalculateOperationTypes>, ICheckableAnalyzator<TriangleCheckOperationTypes>
     {
